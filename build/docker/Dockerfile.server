@@ -1,7 +1,0 @@
-FROM alpine-java:base
-MAINTAINER kyree.org
-COPY demo.jar /opt/demo/lib/
-ENTRYPOINT ["/usr/bin/java"]
-CMD ["-jar", "/opt/demo/lib/demo.jar"]
-VOLUME /var/lib/demo/demo-repo
-EXPOSE 8888
