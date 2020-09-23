@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-simple-deployment
+  labels:
+    app: docker-simple
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docker-simple
+  template:
+    metadata:
+      labels:
+        app: docker-simple
+    spec:
+      containers:
+      - name: docker-simple
+        image: docker-simple:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080

@@ -23,3 +23,4 @@ remove it
 	docker stop demo
 	docker rm demo
 	
+There is a kubernetes variant... see the kubernetes README
