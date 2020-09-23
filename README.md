@@ -5,8 +5,8 @@ hosted by an alpine linux distribution
 To run it from docker...  
 1. Do a clean install from maven  
 1. Change your working directory to the projects root directory  
-1. Run    docker build .   
-1. Run    docker run --name=demo --publish=8080:8080 demo:latest  
+1. Run    docker build -t docker-simple .   
+1. Run    docker run --name=docker-simple --publish=8080:8080 docker-simple:latest  
 
 The project has one dynamic page and one static page you can visit to verify the project is working (see links below)
  
